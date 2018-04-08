@@ -1,5 +1,5 @@
 @import '~scss/_mixins';
-/// 菊花loading动效
+/// loading动效
 /// @group animation
 @-webkit-keyframes m-chrysanthemum-spinner {
             0% {
@@ -19,7 +19,7 @@
         }
 
 .home-logo {
-
+    width: 60px;
+    height: 60px;
 	animation: m-chrysanthemum-spinner 6s linear infinite;
-
 }

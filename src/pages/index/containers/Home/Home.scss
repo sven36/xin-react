@@ -4,7 +4,6 @@ body {
 
 .vip-user {
     padding: 0 20px;
-    background: url('./img/top-banner.png');
     background-size: 100% 100%;
     div {
         height: 70px;
@@ -19,10 +18,8 @@ body {
         text-align: left;
     }
     .vip-no::after {
-        background: url('./img/vip-no.png?__inline');
     }
     .vip-yes::after {
-        background: url('./img/vip.png?__inline');
     }
     span:first-child::after {
         content: '';
@@ -132,7 +129,6 @@ body {
         }
         p:first-child::after {
             content: '';
-            background: url('./img/icon-bg.png?__inline');
             float: right;
             width: 37px;
             height: 16px;
@@ -153,7 +149,6 @@ body {
     }
     .switch-content-left {
         margin-right: 3px;
-        background: url('./img/switch-content-left.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         p:first-child::after {
@@ -168,7 +163,6 @@ body {
     }
     .switch-content-right {
         margin-left: 3px;
-        background: url('./img/switch-content-right.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         p:first-child::after {
@@ -209,19 +203,16 @@ body {
     }
     .icon-rates {
         a::before {
-            background: url('./img/icon-rates.png?__inline');
             background-size: 40px 40px;
         }
     }
     .icon-high {
         a::before {
-            background: url('./img/icno-high.png?__inline');
             background-size: 40px 40px;
         }
     }
     .icon-more {
         a::before {
-            background: url('./img/icon-more.png?__inline');
             background-size: 40px 40px;
         }
     }
@@ -233,7 +224,6 @@ body {
             height: 40px;
             margin: 0 auto 10px;
             background-repeat: no-repeat;
-            background: url('./img/icon-direct.png?__inline');
             background-size: 40px 40px;
         }
     }

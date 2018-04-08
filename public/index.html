@@ -8,10 +8,6 @@
     <meta content="white" name="apple-mobile-web-app-status-bar-style">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <link rel="shortcut icon" href="favicon.ico" />
-    <script>
-        // 这一段是为了激活元素的伪类:active的状态(一些touch的样式使用伪类来解决的情况)
-       document.addEventListener("touchstart", function () { }, !0), function (e) { function t() { n = o.getBoundingClientRect().width, i !== n && (i = n, e.rem = n / 10, /ZTE U930_TD/.test(navigator.userAgent) && (e.rem = 1.13 * e.rem), o.style.fontSize = e.rem + "px") } var n, i, o = document.documentElement, u = null; t(), e.addEventListener("resize", function () { clearTimeout(u), u = setTimeout(t, 300) }), e.addEventListener("orientationchange", function () { clearTimeout(u), u = setTimeout(t, 300) }) }(window)
-    </script>
 </head>
 <body>
     <div id="root">

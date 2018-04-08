@@ -1,7 +1,0 @@
-{
-    "error_no": 0,
-    "error_msg": "用户未登录!",
-    "result": {
-        "redirectUrl": "https://www.baidu.com"
-    }
-}
