@@ -1,34 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <script type="text/javascript">var browserName = navigator.userAgent.toLowerCase(), version = (browserName.match(/.+(?:rv|it|ra|ie)[\/: ]([\d.]+)/) || [0, "0"])[1]; /msie/i.test(browserName) && !/opera/.test(browserName) && version < 8 && (location.href = "/normal/static/components/browsercheck.html")</script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="wap-font-scale" content="no">
     <meta content="white" name="apple-mobile-web-app-status-bar-style">
     <meta content="yes" name="apple-mobile-web-app-capable">
-    <link rel="shortcut icon" href="favicon.ico" />
-    <script>
-        // 这一段是为了激活元素的伪类:active的状态(一些touch的样式使用伪类来解决的情况)
-       document.addEventListener("touchstart", function () { }, !0), function (e) { function t() { n = o.getBoundingClientRect().width, i !== n && (i = n, e.rem = n / 10, /ZTE U930_TD/.test(navigator.userAgent) && (e.rem = 1.13 * e.rem), o.style.fontSize = e.rem + "px") } var n, i, o = document.documentElement, u = null; t(), e.addEventListener("resize", function () { clearTimeout(u), u = setTimeout(t, 300) }), e.addEventListener("orientationchange", function () { clearTimeout(u), u = setTimeout(t, 300) }) }(window)
-    </script>
+    <link rel="shortcut icon" href="//static.58.com/favicon.ico" />
+    <title>我的会员</title>
+    <script>document.addEventListener("touchstart", function () { }, !0)</script>
 </head>
+
 <body>
     <div id="root">
         <style>
-            /* rem famat */
-
             .lm-loading {
                 position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                z-index: 100;
+                z-index: 100
             }
 
             .lm-loading.hidden {
-                display: none;
+                display: none
             }
 
             .lm-loading-body {
@@ -49,7 +48,7 @@
                 -moz-border-radius: 3px;
                 border-radius: 3px;
                 padding: 20px;
-                text-align: center;
+                text-align: center
             }
 
             .lm-loading-icon {
@@ -64,78 +63,78 @@
                 -webkit-animation: m-chrysanthemum-spinner linear 2.6s infinite;
                 -moz-animation: m-chrysanthemum-spinner linear 2.6s infinite;
                 -o-animation: m-chrysanthemum-spinner linear 2.6s infinite;
-                animation: m-chrysanthemum-spinner linear 2.6s infinite;
+                animation: m-chrysanthemum-spinner linear 2.6s infinite
             }
 
             @-webkit-keyframes m-chrysanthemum-spinner {
                 0% {
-                    -webkit-transform: rotate(0deg);
-                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0);
+                    transform: rotate(0)
                 }
                 50% {
                     -webkit-transform: rotate(180deg);
-                    transform: rotate(180deg);
+                    transform: rotate(180deg)
                 }
                 100% {
                     -webkit-transform: rotate(360deg);
-                    transform: rotate(360deg);
+                    transform: rotate(360deg)
                 }
             }
 
             @-moz-keyframes m-chrysanthemum-spinner {
                 0% {
-                    -webkit-transform: rotate(0deg);
-                    -moz-transform: rotate(0deg);
-                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0);
+                    -moz-transform: rotate(0);
+                    transform: rotate(0)
                 }
                 50% {
                     -webkit-transform: rotate(180deg);
                     -moz-transform: rotate(180deg);
-                    transform: rotate(180deg);
+                    transform: rotate(180deg)
                 }
                 100% {
                     -webkit-transform: rotate(360deg);
                     -moz-transform: rotate(360deg);
-                    transform: rotate(360deg);
+                    transform: rotate(360deg)
                 }
             }
 
             @-o-keyframes m-chrysanthemum-spinner {
                 0% {
-                    -webkit-transform: rotate(0deg);
-                    -o-transform: rotate(0deg);
-                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0);
+                    -o-transform: rotate(0);
+                    transform: rotate(0)
                 }
                 50% {
                     -webkit-transform: rotate(180deg);
                     -o-transform: rotate(180deg);
-                    transform: rotate(180deg);
+                    transform: rotate(180deg)
                 }
                 100% {
                     -webkit-transform: rotate(360deg);
                     -o-transform: rotate(360deg);
-                    transform: rotate(360deg);
+                    transform: rotate(360deg)
                 }
             }
 
             @keyframes m-chrysanthemum-spinner {
                 0% {
-                    -webkit-transform: rotate(0deg);
-                    -moz-transform: rotate(0deg);
-                    -o-transform: rotate(0deg);
-                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0);
+                    -moz-transform: rotate(0);
+                    -o-transform: rotate(0);
+                    transform: rotate(0)
                 }
                 50% {
                     -webkit-transform: rotate(180deg);
                     -moz-transform: rotate(180deg);
                     -o-transform: rotate(180deg);
-                    transform: rotate(180deg);
+                    transform: rotate(180deg)
                 }
                 100% {
                     -webkit-transform: rotate(360deg);
                     -moz-transform: rotate(360deg);
                     -o-transform: rotate(360deg);
-                    transform: rotate(360deg);
+                    transform: rotate(360deg)
                 }
             }
 
@@ -143,16 +142,20 @@
                 margin-top: 12px;
                 word-break: break-all;
                 color: #fff;
-                font-size: 15px;
+                font-size: 15px
             }
-
         </style>
-        <div  class="lm-loading " style="background-color: rgba(0, 0, 0, 0);">
+        <div class="lm-loading" style="background-color:rgba(0,0,0,0)">
             <div class="lm-loading-body">
                 <i class="lm-loading-icon"></i>
             </div>
         </div>
     </div>
+    <script>window.bizz = "$!{bizz}", window.topUpSuccess = "$!{topUpSuccess}", window.appOpt = "$!{appOpt}"</script>
+    <script>window.WMDA_SDK_CONFIG = { api_v: 1, sdk_v: .1, mode: "report", appid: 3345329404289, key: "bm50ewrm", project_id: "3289916654594" }, function () { if ("daikuan.58.com" === location.host) { var t = document.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = ("https:" == document.location.protocol ? "https://" : "http://") + "j1.58cdn.com.cn/wmda/js/statistic.js?" + +new Date; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(t, e) } }()</script>
+    <div style="display:none">#if($appOpt)
+        <script type="text/javascript" src="//a.58cdn.com.cn/app58/js/app.js"></script>#end</div>
+    <script type="text/javascript" src="/sven36/xin-react/static/js/main.e41e9087.js"></script>
 </body>
 
 </html>

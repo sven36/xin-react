@@ -2,8 +2,6 @@ import React from 'react';
 import Item from './ListItem';
 import './List.scss';
 import request from '../../api/request';
-import Dialog from 'lm-dialog';
-import JoinVipLayer from '../../pages/index/components/JoinVipLayer/JoinVipLayer';
 
 export default class List extends React.Component {
     static Item = Item;
@@ -113,16 +111,6 @@ export default class List extends React.Component {
         return (
             <div className="lm-ui-cells" onClick={this.wrapperClick}>
                 {children ? children : null}
-                {
-                    this.state.showState ? <Dialog
-                        showState={true}
-                        title={'加入VIP会员即可申请'}
-                        btnOkText="立即查看"
-                        btnOkCbFun={this.btnOkCbFun}
-                        btnCancelCbFun={this.btnCancelCbFun}>
-                        <JoinVipLayer />
-                    </Dialog> : null
-                }
             </div>
         );
     }

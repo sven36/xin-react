@@ -1,0 +1,22 @@
+
+.lm-ui-top-nav {
+	position: relative;
+	background: #f6f6f6;
+	h1 {
+		font-size: 16px;
+		font-weight: 500;
+		color: #000;
+		text-align: center;
+		line-height: 44px;
+	}
+	a {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 0;
+		top: 0;
+		background: url('./img/icon-back.png?__inline') no-repeat;
+		background-size: 10px;
+		background-position: 14px center;
+	}
+}
