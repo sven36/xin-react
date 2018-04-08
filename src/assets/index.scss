@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@import '~scss/_mixins';
+
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, div, span, i, em, strong, b, fieldset, legend, input, select, textarea, button, th, td, menu{
+    @include m-box-sizing(border-box);
+}
+
+@import '~scss_mixin/reset'
