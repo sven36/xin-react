@@ -1,4 +1,4 @@
-###earth-mock-server
+###mock-server
 ###特点
 * 使用简单
 * 提供部分server能力
