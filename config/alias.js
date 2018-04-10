@@ -8,5 +8,6 @@ module.exports = {
     public: path.resolve('public/'),
     scss: path.resolve('src/scss_mixin/scss/'),
     scss_mixin: path.resolve('src/scss_mixin/'),
-    assets: path.resolve('src/assets/')
+    assets: path.resolve('src/assets/'),
+    views: path.resolve('src/pages/'),
 };
