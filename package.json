@@ -19,16 +19,16 @@
   "bugs": {
     "url": "https://github.com/sven36/xin-react/issues"
   },
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:3003/",
   "homepage": "https://github.com/sven36/xin-react#readme",
   "devDependencies": {
     "koa": "^2.5.0",
     "koa-router": "^7.4.0",
+    "node-fetch": "^2.1.2",
     "react": "15.6.1",
     "react-dom": "15.6.1",
-    "react-router": "3.0.5",
     "react-router-dom": "^4.2.2",
     "whatwg-fetch": "2.0.3",
-    "xin-react-scripts": "^1.0.5"
+    "xin-react-scripts": "^1.0.9"
   }
 }

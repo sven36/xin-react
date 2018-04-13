@@ -1,20 +1,9 @@
-import Koa from 'koa';
-import App from 'views/index/containers/Home/Home';
-import React from 'react';
-import { StaticRouter } from 'react-router-dom';
-import { renderToString } from 'react-dom/server';
+import routers from './routes/routers';
 
+const koa = require('koa');
+const app = new koa();
 
-const app = new Koa();
-app.get('/', async (ctx, next) => {
-    const markup = renderToString(
-        <StaticRouter >
-            <App />
-        </StaticRouter>
-    );
-    ctx.body = ctx.render(markup, 'string');
-    next();
-})
-
+// 注册路由；
+routers(app);
 
 export default app;

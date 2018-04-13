@@ -34,6 +34,7 @@ function handleData(data) {
  * @return {object}           An object containing either "data" or "err"
  */
 var params = {};
+
 export default {
 	get: function(url, options) {
 		var params =options ? "?" : '';
